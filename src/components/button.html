@@ -3,13 +3,13 @@
     align: {
       left: 'text-left',
       center: 'text-center',
-      right: 'text-right',
+      right: 'text-right'
     }[props.align],
     href: props.href,
     msoPt: props['mso-pt'] || '16px',
     msoPr: props['mso-pr'] || '32px',
     msoPb: props['mso-pb'] || '30px',
-    msoPl: props['mso-pl'] || '32px',
+    msoPl: props['mso-pl'] || '32px'
   }
 </script>
 
@@ -17,22 +17,14 @@
   <a
     attributes
     href="{{ href }}"
-    class="inline-block py-4 px-6 text-base leading-none font-semibold rounded text-slate-50 text-blue-600 [text-decoration:none]"
+    class="inline-block rounded px-6 py-4 text-base font-semibold leading-none text-blue-600 text-slate-50 [text-decoration:none]"
   >
     <outlook>
-      <i
-        class="mso-font-width-[-100%]"
-        style="letter-spacing: {{ msoPl }}; mso-text-raise: {{ msoPb }};"
-        hidden
-      >&nbsp;</i>
+      <i class="mso-font-width-[-100%]" style="letter-spacing: {{ msoPl }}; mso-text-raise: {{ msoPb }};" hidden>&nbsp;</i>
     </outlook>
     <span style="mso-text-raise: {{ msoPt }}"><content /></span>
     <outlook>
-      <i
-        class="mso-font-width-[-100%]"
-        style="letter-spacing: {{ msoPr }};"
-        hidden
-      >&nbsp;</i>
+      <i class="mso-font-width-[-100%]" style="letter-spacing: {{ msoPr }};" hidden>&nbsp;</i>
     </outlook>
   </a>
 </div>

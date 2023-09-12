@@ -8,7 +8,7 @@
     right: props.right, // right margin
     spaceY: props['space-y'] || '24px', // top and bottom margin
     spaceX: props['space-x'], // right and left margin
-    hasBgClass: props.class && props.class.split(' ').some(c => c.startsWith('bg-')),
+    hasBgClass: props.class && props.class.split(' ').some((c) => c.startsWith('bg-'))
   }
 </script>
 
@@ -26,4 +26,6 @@
     {{ left && `margin-left: ${left}` }};
     {{ right && `margin-right: ${right}` }};
   "
->&zwj;</div>
+>
+  &zwj;
+</div>

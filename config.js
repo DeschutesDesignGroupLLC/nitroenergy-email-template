@@ -14,12 +14,12 @@ module.exports = {
     templates: {
       source: 'src/templates',
       destination: {
-        path: 'build_local',
+        path: 'build_local'
       },
       assets: {
         source: 'src/images',
-        destination: 'images',
-      },
-    },
-  },
+        destination: 'images'
+      }
+    }
+  }
 }
