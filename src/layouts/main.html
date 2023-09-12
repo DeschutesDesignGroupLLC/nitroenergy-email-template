@@ -35,7 +35,31 @@
     </div>
   </if>
   <div role="article" aria-roledescription="email" aria-label="{{{ page.title || '' }}}" lang="{{ page.language || 'en' }}">
-    <content />
+    <div class="bg-gray-50 sm:px-4 font-sans">
+      <table align="center">
+        <tr>
+          <td class="w-[552px] max-w-full">
+            <x-header />
+            <table class="w-full">
+              <tr>
+                <td class="text-base text-gray-600 bg-white rounded-b shadow-sm">
+                  <div class="bg-[#d00000] h-[50px] rounded-t flex items-center justify-center text-white font-bold tracking-tight uppercase text-xl">
+                    Welcome
+                  </div>
+                  <div class="p-12 sm:px-6">
+                    <content />
+                  </div>
+                </td>
+              </tr>
+              <tr role="separator">
+                <td class="leading-6">&zwj;</td>
+              </tr>
+            </table>
+            <x-footer />
+          </td>
+        </tr>
+      </table>
+    </div>
   </div>
 </body>
 </html>
