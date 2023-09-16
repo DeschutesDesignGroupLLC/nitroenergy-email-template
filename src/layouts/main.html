@@ -55,12 +55,12 @@
               <x-header />
               <table class="w-full">
                 <tr>
+                  <td class="text-center bg-[#A23746] text-xl font-bold uppercase tracking-tight text-white py-4">
+                    {{{ page.header || '' }}}
+                  </td>
+                </tr>
+                <tr>
                   <td class="rounded-b bg-white text-base text-gray-600 shadow-sm">
-                    <div
-                      class="flex h-[50px] items-center justify-center rounded-t bg-[#d00000] text-xl font-bold uppercase tracking-tight text-white"
-                    >
-                      Welcome
-                    </div>
                     <div class="p-12 sm:px-6">
                       <content />
                     </div>
